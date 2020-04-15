@@ -1,12 +1,12 @@
 ### what does this simple App do and what lifecyle function call order observed?
-#### When the App starts, lifecycle activity (MainActivity) will start first with a button
+#### Step1. When the App starts, lifecycle activity (MainActivity) will start first with a button
 ```
 2020-04-14 20:48:00.571 7145-7145/com.example.androidpractice E/lifecycle: MainActivity---onCreate
 2020-04-14 20:48:00.590 7145-7145/com.example.androidpractice E/lifecycle: MainActivity---onStart
 2020-04-14 20:48:00.592 7145-7145/com.example.androidpractice E/lifecycle: MainActivity---onResume
 ```
 
-#### Once clicked the buttion, App will switch to OtherActivity
+#### Step2. Once clicked the buttion, App will switch to OtherActivity
 ```
 2020-04-14 20:48:38.634 7145-7145/com.example.androidpractice E/lifecycle: MainActivity---onPause
 2020-04-14 20:48:38.829 7145-7145/com.example.androidpractice E/lifecycle: OtherActivity---onCreate
@@ -15,7 +15,7 @@
 2020-04-14 20:48:39.666 7145-7145/com.example.androidpractice E/lifecycle: MainActivity---onStop
 ```
 
-#### On the OtherActivity, click back to lifecycle activity(MainActivity)
+#### Step3. On the OtherActivity, click back to lifecycle activity(MainActivity)
 ```
 2020-04-14 20:48:53.284 7145-7145/com.example.androidpractice E/lifecycle: OtherActivity---onPause
 2020-04-14 20:48:53.296 7145-7145/com.example.androidpractice E/lifecycle: MainActivity---onReStart
