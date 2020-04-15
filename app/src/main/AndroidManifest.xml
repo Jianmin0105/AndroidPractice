@@ -16,10 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".lifeCycle.OtherActivity" />
         <activity android:name=".multiActivity.SecondActivity" />
-        <activity android:name=".multiActivity.MainActivity">
-
-        </activity>
+        <activity android:name=".multiActivity.MainActivity" />
     </application>
 
 </manifest>
