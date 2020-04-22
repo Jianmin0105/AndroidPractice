@@ -9,13 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".timepicker.MainActivity">
+        <activity android:name=".progressbar.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".timepicker.MainActivity" />
         <activity android:name=".radiobutton.MainActivity" />
         <activity android:name=".checkbox.MainActivity" />
         <activity android:name=".handlerBetweenThread.MainActivity" />
